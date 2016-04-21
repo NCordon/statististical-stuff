@@ -115,6 +115,8 @@ $(document).ready(function () {
 <h1>Boston Dataset</h1>
 <p>This is a problem from the Book <em>An Introduction to Statistical Learning, with Applications in R, Springer</em> (<a href="http://www-bcf.usc.edu/~gareth/ISL/" class="uri">http://www-bcf.usc.edu/~gareth/ISL/</a>). Chapter 3, exercise 15.</p>
 <p><em>This problem involves the Boston data set. We will now try to predict per capita crime rate using the other cariables in this data set. In other words, per capita crime rate is the response, and the other variables are the predictor</em></p>
+<div id="linear-regression" class="section level3">
+<h3>Linear Regression</h3>
 <p><em>For each predictor, fit a simple linear regression model to predict the response. Describe your results. In which of the models is there a statistically significant association between the predictor and the response? Create some plots to back up your assertions</em></p>
 <pre class="r"><code>library(MASS)
 library(ISLR)</code></pre>
@@ -134,6 +136,7 @@ fits.pval &lt;- lapply(fits, function(x){
          pvalue = summary(x$fit)$coefficients[2,4])
 })</code></pre>
 <pre class="r"><code># place here the graphics comparing results</code></pre>
+</div>
 </div>
 
 
