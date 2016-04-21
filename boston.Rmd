@@ -1,0 +1,37 @@
+
+Boston Dataset
+==========================================================================
+This is a problem from the Book *An Introduction to Statistical Learning,
+with Applications in R, Springer* (<http://www-bcf.usc.edu/~gareth/ISL/>).
+Chapter 3, exercise 15.
+
+*This problem involves the Boston data set. We will now try to predict per
+capita crime rate using the other cariables in this data set. In other words,
+per capita crime rate is the response, and the other variables are the
+predictor*
+
+*For each predictor, fit a simple linear regression model to predict the
+response. Describe your results. In which of the models is there a statistically
+significant association between the predictor and the response? Create some
+plots to back up your assertions*
+
+```{r libraries}
+library(MASS)
+library(ISLR)
+
+# all the predictors except crim
+vars <- names(Boston)
+vars <- vars [vars != "crim"]
+
+fits <- lapply(vars, function(x){
+  formula <- paste("crim ~", x)
+  fit <- lm (formula, data=Boston)
+  list(name=x, fit=fit)
+})
+
+
+fits.pval <- lapply(fits, function(x){
+  list ( name = x$name,
+         pvalue = summary(x$fit)$coefficients[2,4])
+})
+```
