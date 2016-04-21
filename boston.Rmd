@@ -15,10 +15,12 @@ response. Describe your results. In which of the models is there a statistically
 significant association between the predictor and the response? Create some
 plots to back up your assertions*
 
-```{r libraries}
+```{r}
 library(MASS)
 library(ISLR)
+```
 
+```{r}
 # all the predictors except crim
 vars <- names(Boston)
 vars <- vars [vars != "crim"]
@@ -34,4 +36,8 @@ fits.pval <- lapply(fits, function(x){
   list ( name = x$name,
          pvalue = summary(x$fit)$coefficients[2,4])
 })
+```
+
+```{r}
+# place here the graphics comparing results
 ```
