@@ -20,6 +20,7 @@ plots to back up your assertions*
 ```{r}
 library(MASS)
 library(ISLR)
+library(ggplot2)
 ```
 
 ```{r}
