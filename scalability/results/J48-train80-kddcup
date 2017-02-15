@@ -1,0 +1,1081 @@
+
+J48 pruned tree
+------------------
+
+Col23 <= 322
+|   Col28 <= 0.32
+|   |   Col34 <= 0.12
+|   |   |   Col4 <= 0
+|   |   |   |   Col35 <= 0.02
+|   |   |   |   |   Col33 <= 0.29
+|   |   |   |   |   |   Col29 <= 0.58: neptune. (679459.0)
+|   |   |   |   |   |   Col29 > 0.58
+|   |   |   |   |   |   |   Col37 <= 0.5
+|   |   |   |   |   |   |   |   Col35 <= 0.01: satan. (17.0)
+|   |   |   |   |   |   |   |   Col35 > 0.01: portsweep. (2.0)
+|   |   |   |   |   |   |   Col37 > 0.5: neptune. (191.0)
+|   |   |   |   |   Col33 > 0.29
+|   |   |   |   |   |   Col29 <= 0.02: normal. (7.0)
+|   |   |   |   |   |   Col29 > 0.02: neptune. (19.0)
+|   |   |   |   Col35 > 0.02
+|   |   |   |   |   Col31 <= 167: neptune. (78.0/2.0)
+|   |   |   |   |   Col31 > 167: portsweep. (100.0)
+|   |   |   Col4 > 0
+|   |   |   |   Col4 <= 7
+|   |   |   |   |   Col31 <= 84: normal. (3.0)
+|   |   |   |   |   Col31 > 84: satan. (89.0/1.0)
+|   |   |   |   Col4 > 7
+|   |   |   |   |   Col26 <= 0: normal. (1024.0/2.0)
+|   |   |   |   |   Col26 > 0
+|   |   |   |   |   |   Col11 <= 0: satan. (4.0/1.0)
+|   |   |   |   |   |   Col11 > 0: normal. (6.0/2.0)
+|   |   Col34 > 0.12
+|   |   |   Col4 <= 9
+|   |   |   |   Col31 <= 105: neptune. (178.0/1.0)
+|   |   |   |   Col31 > 105
+|   |   |   |   |   Col26 <= 0.99
+|   |   |   |   |   |   Col24 <= 0.53
+|   |   |   |   |   |   |   Col35 <= 0.5: satan. (9024.0/1.0)
+|   |   |   |   |   |   |   Col35 > 0.5
+|   |   |   |   |   |   |   |   Col1 = tcp: portsweep. (34.0/1.0)
+|   |   |   |   |   |   |   |   Col1 = udp: satan. (339.0)
+|   |   |   |   |   |   |   |   Col1 = icmp: satan. (0.0)
+|   |   |   |   |   |   Col24 > 0.53: portsweep. (106.0)
+|   |   |   |   |   Col26 > 0.99
+|   |   |   |   |   |   Col29 <= 0.78: portsweep. (406.0)
+|   |   |   |   |   |   Col29 > 0.78: satan. (145.0)
+|   |   |   Col4 > 9
+|   |   |   |   Col7 <= 1
+|   |   |   |   |   Col4 <= 46
+|   |   |   |   |   |   Col5 <= 60: normal. (5.0/1.0)
+|   |   |   |   |   |   Col5 > 60: satan. (3.0)
+|   |   |   |   |   Col4 > 46: normal. (1658.0)
+|   |   |   |   Col7 > 1: teardrop. (31.0)
+|   Col28 > 0.32
+|   |   Col38 <= 0.88
+|   |   |   Col36 <= 0.49
+|   |   |   |   Col40 <= 0.99
+|   |   |   |   |   Col7 <= 0
+|   |   |   |   |   |   Col12 <= 0
+|   |   |   |   |   |   |   Col36 <= 0.24
+|   |   |   |   |   |   |   |   Col25 <= 0.57
+|   |   |   |   |   |   |   |   |   Col9 <= 0
+|   |   |   |   |   |   |   |   |   |   Col4 <= 20
+|   |   |   |   |   |   |   |   |   |   |   Col1 = tcp
+|   |   |   |   |   |   |   |   |   |   |   |   Col34 <= 0.66
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col5 <= 5007
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col29 <= 0.45
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col34 <= 0.1: normal. (18420.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col34 > 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col26 <= 0.5: normal. (562.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col26 > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = SF: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = S2: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = S1: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = S3: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = OTH: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = REJ: normal. (1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = RSTO: normal. (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = S0: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = RSTR: portsweep. (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = RSTOS0: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col3 = SH: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col29 > 0.45
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col26 <= 0.58
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col39 <= 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col23 <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col32 <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 7: satan. (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 7: normal. (16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col32 > 1: normal. (348.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col23 > 2: satan. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col39 > 0.1: satan. (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col26 > 0.58: portsweep. (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col5 > 5007
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col32 <= 22
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col0 <= 5: multihop. (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col0 > 5: warezmaster. (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col32 > 22
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col11 <= 0: normal. (31.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col11 > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col32 <= 61: normal. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col32 > 61: buffer_overflow. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col34 > 0.66
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col35 <= 0.58
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col34 <= 0.99: normal. (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col34 > 0.99: ipsweep. (22.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 1: normal. (52.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col35 > 0.58: portsweep. (24.0)
+|   |   |   |   |   |   |   |   |   |   |   Col1 = udp
+|   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col31 <= 35: rootkit. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col31 > 35: satan. (480.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col4 > 5: normal. (262.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Col1 = icmp
+|   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 19
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col39 <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 13
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col22 <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col31 <= 2: ipsweep. (29.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col31 > 2: nmap. (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col22 > 1: ipsweep. (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 13: ipsweep. (30.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col39 > 0: portsweep. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col4 > 19: satan. (28.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Col4 > 20
+|   |   |   |   |   |   |   |   |   |   |   Col36 <= 0.09
+|   |   |   |   |   |   |   |   |   |   |   |   Col5 <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col31 <= 13
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col11 <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 205: normal. (902.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 205
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col1 = tcp: normal. (149.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col1 = udp: nmap. (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col1 = icmp: normal. (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col11 > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col35 <= 0.96: normal. (549.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col35 > 0.96
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 353
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 326
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col38 <= 0.01: normal. (28.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col38 > 0.01: warezclient. (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 326: warezclient. (69.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 353
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col0 <= 3: normal. (75.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col0 > 3: warezclient. (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col31 > 13
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col0 <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col35 <= 0.78
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = aol: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = auth: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = bgp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = courier: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = csnet_ns: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ctf: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = daytime: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = discard: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = domain: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = domain_u: normal. (3778.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = echo: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = eco_i: normal. (672.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ecr_i
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 548: normal. (39.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 548: smurf. (189.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = efs: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = exec: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = finger: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ftp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ftp_data
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col32 <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col31 <= 28
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col34 <= 0.09: warezclient. (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col34 > 0.09: normal. (43.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col31 > 28: normal. (285.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col32 > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col31 <= 220: normal. (17812.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col31 > 220
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 353
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 326: normal. (771.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 326: warezclient. (14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 353: normal. (3202.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = gopher: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = harvest: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = hostnames: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = http: normal. (16.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = http_443: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = http_2784: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = http_8001: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = imap4: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = IRC: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = iso_tsap: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = klogin: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = kshell: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ldap: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = link: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = login: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = mtp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = name: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_dgm: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_ns: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_ssn: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = netstat: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = nnsp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = nntp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ntp_u: normal. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = other: normal. (485.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = pm_dump: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = pop_2: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = pop_3: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = printer: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = private
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 102: nmap. (27.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 102: normal. (10695.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = red_i: normal. (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = remote_job: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = rje: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = shell: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = smtp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = sql_net: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ssh: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = sunrpc: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = supdup: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = systat: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = telnet: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = tftp_u: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = time: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = tim_i: normal. (1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = urh_i: normal. (99.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = urp_i: normal. (3226.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = uucp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = uucp_path: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = vmnet: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = whois: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = X11: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = Z39_50: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col35 > 0.78
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 204: normal. (10123.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 204
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col1 = tcp
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col36 <= 0.06: normal. (499.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col36 > 0.06
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col22 <= 4: warezclient. (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col22 > 4: normal. (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col1 = udp
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col31 <= 251: nmap. (123.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col31 > 251: normal. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col1 = icmp: smurf. (2140.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col0 > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col36 <= 0.06
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col38 <= 0.01: normal. (35.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col38 > 0.01: warezclient. (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col36 > 0.06: warezclient. (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col5 > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 46152: normal. (515742.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 46152
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col22 <= 2: normal. (104.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col22 > 2: back. (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Col36 > 0.09
+|   |   |   |   |   |   |   |   |   |   |   |   Col35 <= 0.59: normal. (4364.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col35 > 0.59
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = aol: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = auth: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = bgp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = courier: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = csnet_ns: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ctf: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = daytime: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = discard: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = domain: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = domain_u: normal. (17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = echo: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = eco_i: normal. (47.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ecr_i: normal. (20.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = efs: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = exec: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = finger: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ftp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ftp_data
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col35 <= 0.91: normal. (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col35 > 0.91: warezclient. (26.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = gopher: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = harvest: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = hostnames: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = http: normal. (179.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = http_443: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = http_2784: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = http_8001: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = imap4: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = IRC: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = iso_tsap: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = klogin: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = kshell: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ldap: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = link: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = login: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = mtp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = name: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_dgm: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_ns: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_ssn: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = netstat: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = nnsp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = nntp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ntp_u: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = other: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = pm_dump: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = pop_2: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = pop_3: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = printer: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = private: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = red_i: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = remote_job: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = rje: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = shell: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = smtp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = sql_net: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = ssh: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = sunrpc: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = supdup: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = systat: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = telnet: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = tftp_u: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = time: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = tim_i: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = urh_i: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = urp_i: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = uucp: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = uucp_path: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = vmnet: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = whois: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = X11: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col2 = Z39_50: normal. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col5 <= 119
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col22 <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col35 <= 0.81
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col32 <= 29: normal. (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col32 > 29: warezclient. (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col35 > 0.81: warezclient. (236.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col22 > 2: normal. (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col5 > 119: normal. (18.0)
+|   |   |   |   |   |   |   |   |   Col9 > 0
+|   |   |   |   |   |   |   |   |   |   Col10 <= 0
+|   |   |   |   |   |   |   |   |   |   |   Col26 <= 0.07
+|   |   |   |   |   |   |   |   |   |   |   |   Col9 <= 25
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col0 <= 2936
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 127
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col13 <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col16 <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col23 <= 2: normal. (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col23 > 2: satan. (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col16 > 0: ftp_write. (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col13 > 0: phf. (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 127
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 1647: normal. (3278.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col4 > 1647
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col39 <= 0.02: normal. (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Col39 > 0.02: back. (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col0 > 2936
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col16 <= 7: warezclient. (43.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Col16 > 7: normal. (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col9 > 25
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col5 <= 3299: warezclient. (174.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Col5 > 3299: normal. (181.0)
+|   |   |   |   |   |   |   |   |   |   |   Col26 > 0.07
+|   |   |   |   |   |   |   |   |   |   |   |   Col4 <= 14052: normal. (33.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col4 > 14052: back. (35.0)
+|   |   |   |   |   |   |   |   |   |   Col10 > 0: guess_passwd. (32.0)
+|   |   |   |   |   |   |   |   Col25 > 0.57
+|   |   |   |   |   |   |   |   |   Col22 <= 2
+|   |   |   |   |   |   |   |   |   |   Col38 <= 0.32: normal. (176.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Col38 > 0.32
+|   |   |   |   |   |   |   |   |   |   |   Col34 <= 0.01
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = aol: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = auth: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = bgp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = courier: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = csnet_ns: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = ctf: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = daytime: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = discard: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = domain: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = domain_u: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = echo: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = eco_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = ecr_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = efs: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = exec: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = finger: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = ftp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = ftp_data: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = gopher: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = harvest: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = hostnames: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = http: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = http_443: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = http_2784: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = http_8001: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = imap4: imap. (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = IRC: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = iso_tsap: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = klogin: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = kshell: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = ldap: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = link: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = login: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = mtp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = name: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_dgm: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_ns: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_ssn: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = netstat: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = nnsp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = nntp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = ntp_u: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = other: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = pm_dump: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = pop_2: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = pop_3: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = printer: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = private: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = red_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = remote_job: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = rje: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = shell: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = smtp: neptune. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = sql_net: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = ssh: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = sunrpc: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = supdup: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = systat: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = telnet: neptune. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = tftp_u: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = time: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = tim_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = urh_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = urp_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = uucp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = uucp_path: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = vmnet: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = whois: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = X11: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col2 = Z39_50: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col34 > 0.01
+|   |   |   |   |   |   |   |   |   |   |   |   Col37 <= 0.95: normal. (29.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col37 > 0.95: neptune. (3.0)
+|   |   |   |   |   |   |   |   |   Col22 > 2
+|   |   |   |   |   |   |   |   |   |   Col3 = SF: imap. (3.0)
+|   |   |   |   |   |   |   |   |   |   Col3 = S2: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   Col3 = S1: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   Col3 = S3: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   Col3 = OTH: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   Col3 = REJ: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   Col3 = RSTO: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   Col3 = S0: neptune. (107.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Col3 = RSTR: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   Col3 = RSTOS0: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   |   Col3 = SH: neptune. (0.0)
+|   |   |   |   |   |   |   Col36 > 0.24
+|   |   |   |   |   |   |   |   Col1 = tcp
+|   |   |   |   |   |   |   |   |   Col4 <= 333
+|   |   |   |   |   |   |   |   |   |   Col25 <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   Col34 <= 0.97: normal. (2144.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   Col34 > 0.97
+|   |   |   |   |   |   |   |   |   |   |   |   Col39 <= 0.46: normal. (15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col39 > 0.46: ipsweep. (6.0)
+|   |   |   |   |   |   |   |   |   |   Col25 > 0.75
+|   |   |   |   |   |   |   |   |   |   |   Col2 = aol: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = auth: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = bgp: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = courier: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = csnet_ns: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ctf: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = daytime: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = discard: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = domain: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = domain_u: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = echo: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = eco_i: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ecr_i: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = efs: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = exec: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = finger
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = SF: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = S2: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = S1: normal. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = S3: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = OTH: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = REJ: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = RSTO: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = S0: land. (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = RSTR: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = RSTOS0: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col3 = SH: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ftp: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ftp_data: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = gopher: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = harvest: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = hostnames: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = http: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = http_443: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = http_2784: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = http_8001: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = imap4: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = IRC: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = iso_tsap: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = klogin: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = kshell: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ldap: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = link: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = login: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = mtp: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = name: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_dgm: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_ns: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_ssn: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = netstat: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = nnsp: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = nntp: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ntp_u: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = other: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = pm_dump: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = pop_2: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = pop_3: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = printer: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = private: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = red_i: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = remote_job: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = rje: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = shell: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = smtp: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = sql_net: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ssh: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = sunrpc: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = supdup: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = systat: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = telnet: neptune. (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = tftp_u: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = time: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = tim_i: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = urh_i: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = urp_i: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = uucp: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = uucp_path: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = vmnet: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = whois: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = X11: land. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = Z39_50: land. (0.0)
+|   |   |   |   |   |   |   |   |   Col4 > 333
+|   |   |   |   |   |   |   |   |   |   Col4 <= 334: warezclient. (46.0)
+|   |   |   |   |   |   |   |   |   |   Col4 > 334
+|   |   |   |   |   |   |   |   |   |   |   Col32 <= 12: normal. (50.0)
+|   |   |   |   |   |   |   |   |   |   |   Col32 > 12
+|   |   |   |   |   |   |   |   |   |   |   |   Col0 <= 2: normal. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Col0 > 2: warezclient. (2.0)
+|   |   |   |   |   |   |   |   Col1 = udp: normal. (32.0)
+|   |   |   |   |   |   |   |   Col1 = icmp
+|   |   |   |   |   |   |   |   |   Col4 <= 13: nmap. (647.0)
+|   |   |   |   |   |   |   |   |   Col4 > 13
+|   |   |   |   |   |   |   |   |   |   Col4 <= 24: ipsweep. (491.0)
+|   |   |   |   |   |   |   |   |   |   Col4 > 24: normal. (75.0)
+|   |   |   |   |   |   Col12 > 0
+|   |   |   |   |   |   |   Col4 <= 12617
+|   |   |   |   |   |   |   |   Col35 <= 0.09: normal. (392.0/2.0)
+|   |   |   |   |   |   |   |   Col35 > 0.09
+|   |   |   |   |   |   |   |   |   Col17 <= 1
+|   |   |   |   |   |   |   |   |   |   Col9 <= 2
+|   |   |   |   |   |   |   |   |   |   |   Col4 <= 12: satan. (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Col4 > 12: normal. (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Col9 > 2
+|   |   |   |   |   |   |   |   |   |   |   Col2 = aol: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = auth: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = bgp: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = courier: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = csnet_ns: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ctf: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = daytime: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = discard: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = domain: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = domain_u: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = echo: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = eco_i: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ecr_i: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = efs: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = exec: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = finger: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ftp: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ftp_data: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = gopher: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = harvest: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = hostnames: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = http: normal. (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = http_443: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = http_2784: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = http_8001: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = imap4: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = IRC: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = iso_tsap: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = klogin: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = kshell: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ldap: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = link: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = login: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = mtp: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = name: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_dgm: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_ns: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = netbios_ssn: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = netstat: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = nnsp: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = nntp: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ntp_u: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = other: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = pm_dump: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = pop_2: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = pop_3: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = printer: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = private: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = red_i: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = remote_job: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = rje: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = shell: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = smtp: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = sql_net: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = ssh: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = sunrpc: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = supdup: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = systat: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = telnet: buffer_overflow. (13.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = tftp_u: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = time: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = tim_i: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = urh_i: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = urp_i: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = uucp: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = uucp_path: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = vmnet: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = whois: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = X11: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   |   |   Col2 = Z39_50: buffer_overflow. (0.0)
+|   |   |   |   |   |   |   |   |   Col17 > 1: loadmodule. (2.0/1.0)
+|   |   |   |   |   |   |   Col4 > 12617: back. (1366.0/1.0)
+|   |   |   |   |   Col7 > 0
+|   |   |   |   |   |   Col1 = tcp: teardrop. (0.0)
+|   |   |   |   |   |   Col1 = udp: teardrop. (596.0)
+|   |   |   |   |   |   Col1 = icmp: pod. (104.0)
+|   |   |   |   Col40 > 0.99
+|   |   |   |   |   Col33 <= 0.12
+|   |   |   |   |   |   Col31 <= 72
+|   |   |   |   |   |   |   Col34 <= 0.68
+|   |   |   |   |   |   |   |   Col37 <= 0.08: normal. (4.0)
+|   |   |   |   |   |   |   |   Col37 > 0.08: portsweep. (15.0)
+|   |   |   |   |   |   |   Col34 > 0.68: ipsweep. (115.0)
+|   |   |   |   |   |   Col31 > 72
+|   |   |   |   |   |   |   Col35 <= 0.01
+|   |   |   |   |   |   |   |   Col34 <= 0.11
+|   |   |   |   |   |   |   |   |   Col2 = aol: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = auth: normal. (6.0)
+|   |   |   |   |   |   |   |   |   Col2 = bgp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = courier: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = csnet_ns: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = ctf: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = daytime: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = discard: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = domain: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = domain_u: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = echo: portsweep. (1.0)
+|   |   |   |   |   |   |   |   |   Col2 = eco_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = ecr_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = efs: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = exec: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = finger: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = ftp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = ftp_data: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = gopher: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = harvest: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = hostnames: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = http: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = http_443: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = http_2784: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = http_8001: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = imap4: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = IRC: normal. (12.0)
+|   |   |   |   |   |   |   |   |   Col2 = iso_tsap: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = klogin: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = kshell: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = ldap: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = link: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = login: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = mtp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = name: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = netbios_dgm: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = netbios_ns: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = netbios_ssn: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = netstat: portsweep. (1.0)
+|   |   |   |   |   |   |   |   |   Col2 = nnsp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = nntp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = ntp_u: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = other: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = pm_dump: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = pop_2: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = pop_3: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = printer: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = private
+|   |   |   |   |   |   |   |   |   |   Col23 <= 1: portsweep. (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Col23 > 1: neptune. (59.0)
+|   |   |   |   |   |   |   |   |   Col2 = red_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = remote_job: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = rje: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = shell: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = smtp: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = sql_net: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = ssh: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = sunrpc: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = supdup: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = systat: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = telnet: normal. (8.0)
+|   |   |   |   |   |   |   |   |   Col2 = tftp_u: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = time: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = tim_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = urh_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = urp_i: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = uucp: satan. (1.0)
+|   |   |   |   |   |   |   |   |   Col2 = uucp_path: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = vmnet: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = whois: neptune. (0.0)
+|   |   |   |   |   |   |   |   |   Col2 = X11: normal. (7.0)
+|   |   |   |   |   |   |   |   |   Col2 = Z39_50: neptune. (0.0)
+|   |   |   |   |   |   |   |   Col34 > 0.11: satan. (9.0/1.0)
+|   |   |   |   |   |   |   Col35 > 0.01: portsweep. (5929.0)
+|   |   |   |   |   Col33 > 0.12
+|   |   |   |   |   |   Col34 <= 0.46
+|   |   |   |   |   |   |   Col4 <= 1112: normal. (18635.0/2.0)
+|   |   |   |   |   |   |   Col4 > 1112
+|   |   |   |   |   |   |   |   Col2 = aol: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = auth: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = bgp: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = courier: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = csnet_ns: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = ctf: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = daytime: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = discard: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = domain: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = domain_u: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = echo: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = eco_i: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = ecr_i: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = efs: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = exec: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = finger: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = ftp: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = ftp_data: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = gopher: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = harvest: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = hostnames: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = http: back. (3.0)
+|   |   |   |   |   |   |   |   Col2 = http_443: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = http_2784: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = http_8001: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = imap4: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = IRC: normal. (22.0)
+|   |   |   |   |   |   |   |   Col2 = iso_tsap: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = klogin: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = kshell: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = ldap: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = link: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = login: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = mtp: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = name: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = netbios_dgm: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = netbios_ns: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = netbios_ssn: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = netstat: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = nnsp: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = nntp: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = ntp_u: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = other: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = pm_dump: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = pop_2: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = pop_3: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = printer: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = private: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = red_i: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = remote_job: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = rje: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = shell: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = smtp: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = sql_net: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = ssh: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = sunrpc: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = supdup: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = systat: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = telnet: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = tftp_u: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = time: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = tim_i: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = urh_i: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = urp_i: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = uucp: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = uucp_path: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = vmnet: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = whois: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = X11: normal. (0.0)
+|   |   |   |   |   |   |   |   Col2 = Z39_50: normal. (0.0)
+|   |   |   |   |   |   Col34 > 0.46
+|   |   |   |   |   |   |   Col39 <= 0.69: normal. (20.0)
+|   |   |   |   |   |   |   Col39 > 0.69: ipsweep. (9.0)
+|   |   |   Col36 > 0.49
+|   |   |   |   Col5 <= 22
+|   |   |   |   |   Col7 <= 0
+|   |   |   |   |   |   Col39 <= 0.99
+|   |   |   |   |   |   |   Col4 <= 24: ipsweep. (7276.0/22.0)
+|   |   |   |   |   |   |   Col4 > 24
+|   |   |   |   |   |   |   |   Col11 <= 0: normal. (19.0/1.0)
+|   |   |   |   |   |   |   |   Col11 > 0
+|   |   |   |   |   |   |   |   |   Col4 <= 450: warezclient. (7.0)
+|   |   |   |   |   |   |   |   |   Col4 > 450: normal. (2.0)
+|   |   |   |   |   |   Col39 > 0.99
+|   |   |   |   |   |   |   Col34 <= 0.5: normal. (177.0)
+|   |   |   |   |   |   |   Col34 > 0.5: ipsweep. (19.0)
+|   |   |   |   |   Col7 > 0: pod. (64.0)
+|   |   |   |   Col5 > 22
+|   |   |   |   |   Col40 <= 0.91
+|   |   |   |   |   |   Col9 <= 2
+|   |   |   |   |   |   |   Col4 <= 1: loadmodule. (3.0/1.0)
+|   |   |   |   |   |   |   Col4 > 1: normal. (650.0/1.0)
+|   |   |   |   |   |   Col9 > 2
+|   |   |   |   |   |   |   Col13 <= 0: normal. (4.0)
+|   |   |   |   |   |   |   Col13 > 0: buffer_overflow. (3.0)
+|   |   |   |   |   Col40 > 0.91: ipsweep. (5.0)
+|   |   Col38 > 0.88
+|   |   |   Col34 <= 0.45
+|   |   |   |   Col3 = SF: normal. (32.0)
+|   |   |   |   Col3 = S2: normal. (3.0)
+|   |   |   |   Col3 = S1: normal. (15.0)
+|   |   |   |   Col3 = S3: guess_passwd. (2.0/1.0)
+|   |   |   |   Col3 = OTH: neptune. (0.0)
+|   |   |   |   Col3 = REJ: portsweep. (1.0)
+|   |   |   |   Col3 = RSTO: neptune. (0.0)
+|   |   |   |   Col3 = S0
+|   |   |   |   |   Col30 <= 0.19
+|   |   |   |   |   |   Col37 <= 0.96
+|   |   |   |   |   |   |   Col24 <= 0.87: portsweep. (2.0)
+|   |   |   |   |   |   |   Col24 > 0.87: neptune. (27.0/1.0)
+|   |   |   |   |   |   Col37 > 0.96: neptune. (5948.0)
+|   |   |   |   |   Col30 > 0.19
+|   |   |   |   |   |   Col2 = aol: neptune. (0.0)
+|   |   |   |   |   |   Col2 = auth: neptune. (0.0)
+|   |   |   |   |   |   Col2 = bgp: neptune. (0.0)
+|   |   |   |   |   |   Col2 = courier: neptune. (0.0)
+|   |   |   |   |   |   Col2 = csnet_ns: neptune. (0.0)
+|   |   |   |   |   |   Col2 = ctf: neptune. (0.0)
+|   |   |   |   |   |   Col2 = daytime: neptune. (0.0)
+|   |   |   |   |   |   Col2 = discard: neptune. (0.0)
+|   |   |   |   |   |   Col2 = domain: neptune. (0.0)
+|   |   |   |   |   |   Col2 = domain_u: neptune. (0.0)
+|   |   |   |   |   |   Col2 = echo: neptune. (0.0)
+|   |   |   |   |   |   Col2 = eco_i: neptune. (0.0)
+|   |   |   |   |   |   Col2 = ecr_i: neptune. (0.0)
+|   |   |   |   |   |   Col2 = efs: neptune. (0.0)
+|   |   |   |   |   |   Col2 = exec: neptune. (0.0)
+|   |   |   |   |   |   Col2 = finger: land. (9.0/3.0)
+|   |   |   |   |   |   Col2 = ftp: neptune. (0.0)
+|   |   |   |   |   |   Col2 = ftp_data: neptune. (0.0)
+|   |   |   |   |   |   Col2 = gopher: neptune. (0.0)
+|   |   |   |   |   |   Col2 = harvest: neptune. (0.0)
+|   |   |   |   |   |   Col2 = hostnames: neptune. (0.0)
+|   |   |   |   |   |   Col2 = http: neptune. (17.0)
+|   |   |   |   |   |   Col2 = http_443: neptune. (0.0)
+|   |   |   |   |   |   Col2 = http_2784: neptune. (0.0)
+|   |   |   |   |   |   Col2 = http_8001: neptune. (0.0)
+|   |   |   |   |   |   Col2 = imap4: neptune. (0.0)
+|   |   |   |   |   |   Col2 = IRC: neptune. (0.0)
+|   |   |   |   |   |   Col2 = iso_tsap: neptune. (0.0)
+|   |   |   |   |   |   Col2 = klogin: neptune. (0.0)
+|   |   |   |   |   |   Col2 = kshell: neptune. (0.0)
+|   |   |   |   |   |   Col2 = ldap: neptune. (0.0)
+|   |   |   |   |   |   Col2 = link: neptune. (0.0)
+|   |   |   |   |   |   Col2 = login: neptune. (0.0)
+|   |   |   |   |   |   Col2 = mtp: neptune. (0.0)
+|   |   |   |   |   |   Col2 = name: neptune. (0.0)
+|   |   |   |   |   |   Col2 = netbios_dgm: neptune. (0.0)
+|   |   |   |   |   |   Col2 = netbios_ns: neptune. (0.0)
+|   |   |   |   |   |   Col2 = netbios_ssn: neptune. (0.0)
+|   |   |   |   |   |   Col2 = netstat: neptune. (0.0)
+|   |   |   |   |   |   Col2 = nnsp: neptune. (0.0)
+|   |   |   |   |   |   Col2 = nntp: neptune. (0.0)
+|   |   |   |   |   |   Col2 = ntp_u: neptune. (0.0)
+|   |   |   |   |   |   Col2 = other: neptune. (0.0)
+|   |   |   |   |   |   Col2 = pm_dump: neptune. (0.0)
+|   |   |   |   |   |   Col2 = pop_2: neptune. (0.0)
+|   |   |   |   |   |   Col2 = pop_3: neptune. (0.0)
+|   |   |   |   |   |   Col2 = printer: neptune. (0.0)
+|   |   |   |   |   |   Col2 = private: neptune. (0.0)
+|   |   |   |   |   |   Col2 = red_i: neptune. (0.0)
+|   |   |   |   |   |   Col2 = remote_job: neptune. (0.0)
+|   |   |   |   |   |   Col2 = rje: neptune. (0.0)
+|   |   |   |   |   |   Col2 = shell: neptune. (0.0)
+|   |   |   |   |   |   Col2 = smtp: neptune. (0.0)
+|   |   |   |   |   |   Col2 = sql_net: neptune. (0.0)
+|   |   |   |   |   |   Col2 = ssh: neptune. (0.0)
+|   |   |   |   |   |   Col2 = sunrpc: neptune. (0.0)
+|   |   |   |   |   |   Col2 = supdup: neptune. (0.0)
+|   |   |   |   |   |   Col2 = systat: neptune. (0.0)
+|   |   |   |   |   |   Col2 = telnet: neptune. (0.0)
+|   |   |   |   |   |   Col2 = tftp_u: neptune. (0.0)
+|   |   |   |   |   |   Col2 = time: neptune. (0.0)
+|   |   |   |   |   |   Col2 = tim_i: neptune. (0.0)
+|   |   |   |   |   |   Col2 = urh_i: neptune. (0.0)
+|   |   |   |   |   |   Col2 = urp_i: neptune. (0.0)
+|   |   |   |   |   |   Col2 = uucp: neptune. (0.0)
+|   |   |   |   |   |   Col2 = uucp_path: neptune. (0.0)
+|   |   |   |   |   |   Col2 = vmnet: neptune. (0.0)
+|   |   |   |   |   |   Col2 = whois: neptune. (0.0)
+|   |   |   |   |   |   Col2 = X11: neptune. (0.0)
+|   |   |   |   |   |   Col2 = Z39_50: neptune. (0.0)
+|   |   |   |   Col3 = RSTR: neptune. (0.0)
+|   |   |   |   Col3 = RSTOS0: neptune. (0.0)
+|   |   |   |   Col3 = SH: imap. (1.0)
+|   |   |   Col34 > 0.45
+|   |   |   |   Col3 = SF: nmap. (0.0)
+|   |   |   |   Col3 = S2: nmap. (0.0)
+|   |   |   |   Col3 = S1: nmap. (0.0)
+|   |   |   |   Col3 = S3: nmap. (0.0)
+|   |   |   |   Col3 = OTH: nmap. (0.0)
+|   |   |   |   Col3 = REJ: nmap. (0.0)
+|   |   |   |   Col3 = RSTO: nmap. (0.0)
+|   |   |   |   Col3 = S0: portsweep. (12.0)
+|   |   |   |   Col3 = RSTR: nmap. (0.0)
+|   |   |   |   Col3 = RSTOS0: nmap. (0.0)
+|   |   |   |   Col3 = SH: nmap. (657.0)
+Col23 > 322
+|   Col4 <= 518: normal. (124.0)
+|   Col4 > 518: smurf. (1794718.0)
+
+Number of Leaves  : 	764
+
+Size of the tree : 	932
+
+
+Time taken to build model: 383.98 seconds
+Time taken to test model on training data: 19.2 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances     3134876               99.9959 %
+Incorrectly Classified Instances       127                0.0041 %
+Kappa statistic                          0.9999
+Mean absolute error                      0     
+Root mean squared error                  0.0018
+Relative absolute error                  0.0128 %
+Root relative squared error              1.1322 %
+Total Number of Instances          3135003     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     normal.
+                 0,900    0,000    1,000      0,900    0,947      0,949    1,000     0,979     buffer_overflow.
+                 0,500    0,000    0,600      0,500    0,545      0,548    0,959     0,322     loadmodule.
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,918     0,000     perl.
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     neptune.
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     smurf.
+                 0,971    0,000    0,971      0,971    0,971      0,971    1,000     0,971     guess_passwd.
+                 0,988    0,000    1,000      0,988    0,994      0,994    1,000     1,000     pod.
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     teardrop.
+                 0,998    0,000    1,000      0,998    0,999      0,999    1,000     0,999     portsweep.
+                 0,999    0,000    0,996      0,999    0,997      0,997    1,000     0,997     ipsweep.
+                 0,786    0,000    0,733      0,786    0,759      0,759    1,000     0,612     land.
+                 0,167    0,000    0,333      0,167    0,222      0,236    0,985     0,084     ftp_write.
+                 0,999    0,000    0,999      0,999    0,999      0,999    1,000     0,999     back.
+                 0,875    0,000    1,000      0,875    0,933      0,935    1,000     0,878     imap.
+                 0,998    0,000    1,000      0,998    0,999      0,999    1,000     0,999     satan.
+                 1,000    0,000    0,750      1,000    0,857      0,866    1,000     0,750     phf.
+                 0,993    0,000    0,999      0,993    0,996      0,996    1,000     0,999     nmap.
+                 0,400    0,000    0,667      0,400    0,500      0,516    1,000     0,493     multihop.
+                 0,846    0,000    1,000      0,846    0,917      0,920    1,000     0,912     warezmaster.
+                 0,988    0,000    0,997      0,988    0,992      0,992    1,000     0,996     warezclient.
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,918     0,000     spy.
+                 0,333    0,000    1,000      0,333    0,500      0,577    0,973     0,435     rootkit.
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+
+=== Confusion Matrix ===
+
+       a       b       c       d       e       f       g       h       i       j       k       l       m       n       o       p       q       r       s       t       u       v       w   <-- classified as
+  622549       0       1       0       4       0       0       0       0       0      14       4       0       1       0       4       0       1       0       0       2       0       0 |       a = normal.
+       1      18       0       0       0       0       0       0       0       0       0       0       0       0       0       0       1       0       0       0       0       0       0 |       b = buffer_overflow.
+       3       0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 |       c = loadmodule.
+       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 |       d = perl.
+       1       0       0       0  686088       0       0       0       0       0       2       0       0       0       0       0       0       0       0       0       0       0       0 |       e = neptune.
+       0       0       0       0       0 1797047       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 |       f = smurf.
+       1       0       0       0       0       0      33       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 |       g = guess_passwd.
+       2       0       0       0       0       0       0     168       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 |       h = pod.
+       0       0       0       0       0       0       0       0     627       0       0       0       0       0       0       0       0       0       0       0       0       0       0 |       i = teardrop.
+       7       0       0       0       0       0       0       0       0    6652       4       0       0       0       0       1       0       0       0       0       0       0       0 |       j = portsweep.
+      10       0       0       0       0       0       0       0       0       0    7978       0       0       0       0       0       0       0       0       0       0       0       0 |       k = ipsweep.
+       0       0       0       0       0       0       0       0       0       0       3      11       0       0       0       0       0       0       0       0       0       0       0 |       l = land.
+       5       0       0       0       0       0       0       0       0       0       0       0       1       0       0       0       0       0       0       0       0       0       0 |       m = ftp_write.
+       1       0       0       0       0       0       0       0       0       0       0       0       0    1410       0       0       0       0       0       0       0       0       0 |       n = back.
+       1       0       0       0       0       0       0       0       0       0       0       0       0       0       7       0       0       0       0       0       0       0       0 |       o = imap.
+      19       0       0       0       0       0       0       0       0       2       0       0       0       0       0   10150       0       0       0       0       0       0       0 |       p = satan.
+       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       3       0       0       0       0       0       0 |       q = phf.
+       2       0       0       0       1       0       0       0       0       1       7       0       0       0       0       0       0    1471       0       0       0       0       0 |       r = nmap.
+       1       0       1       0       0       0       0       0       0       0       0       0       1       0       0       0       0       0       2       0       0       0       0 |       s = multihop.
+       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       1      11       0       0       0 |       t = warezmaster.
+       7       0       0       0       0       0       1       0       0       0       0       0       0       0       0       0       0       0       0       0     645       0       0 |       u = warezclient.
+       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0 |       v = spy.
+       3       0       0       0       0       0       0       0       0       0       0       0       1       0       0       0       0       0       0       0       0       0       2 |       w = rootkit.
+
+
+=== Error on test data ===
+
+Correctly Classified Instances      979593               99.9914 %
+Incorrectly Classified Instances        84                0.0086 %
+Kappa statistic                          0.9999
+Mean absolute error                      0     
+Root mean squared error                  0.0027
+Relative absolute error                  0.0203 %
+Root relative squared error              1.6655 %
+Total Number of Instances           979677     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     normal.
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,583     0,083     buffer_overflow.
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,418     0,000     loadmodule.
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         perl.
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     neptune.
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     smurf.
+                 1,000    0,000    0,909      1,000    0,952      0,953    1,000     0,909     guess_passwd.
+                 0,981    0,000    1,000      0,981    0,990      0,990    1,000     1,000     pod.
+                 0,995    0,000    1,000      0,995    0,997      0,997    0,997     0,995     teardrop.
+                 0,996    0,000    0,999      0,996    0,997      0,997    0,999     0,996     portsweep.
+                 0,998    0,000    0,996      0,998    0,997      0,997    1,000     0,995     ipsweep.
+                 0,250    0,000    0,250      0,250    0,250      0,250    0,874     0,084     land.
+                 1,000    0,000    0,500      1,000    0,667      0,707    1,000     0,500     ftp_write.
+                 0,998    0,000    0,998      0,998    0,998      0,998    0,999     0,993     back.
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     imap.
+                 0,997    0,000    0,999      0,997    0,998      0,998    0,999     0,997     satan.
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         phf.
+                 0,991    0,000    0,996      0,991    0,994      0,994    0,997     0,991     nmap.
+                 0,000    0,000    0,000      0,000    0,000      -0,000   1,000     0,200     multihop.
+                 0,250    0,000    1,000      0,250    0,400      0,500    0,749     0,375     warezmaster.
+                 0,956    0,000    0,985      0,956    0,970      0,970    0,988     0,951     warezclient.
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         spy.
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,668     0,000     rootkit.
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+
+=== Confusion Matrix ===
+
+      a      b      c      d      e      f      g      h      i      j      k      l      m      n      o      p      q      r      s      t      u      v      w   <-- classified as
+ 194536      0      0      0      5      0      0      0      0      0      5      3      0      1      0      1      1      1      0      0      3      0      0 |      a = normal.
+      3      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      1      0      2      0      0      0      0 |      b = buffer_overflow.
+      1      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 |      c = loadmodule.
+      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 |      d = perl.
+      5      0      0      0 214394      0      0      0      0      3      1      0      0      0      0      0      0      0      0      0      0      0      0 |      e = neptune.
+      0      0      0      0      0 561577      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 |      f = smurf.
+      0      0      0      0      0      0     10      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 |      g = guess_passwd.
+      1      0      0      0      0      0      0     51      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 |      h = pod.
+      1      0      0      0      0      0      0      0    194      0      0      0      0      0      0      0      0      0      0      0      0      0      0 |      i = teardrop.
+      6      0      0      0      1      0      0      0      0   2073      2      0      0      0      0      0      0      0      0      0      0      0      0 |      j = portsweep.
+      4      0      0      0      0      0      0      0      0      0   2491      0      0      0      0      0      0      1      0      0      0      0      0 |      k = ipsweep.
+      0      0      0      0      1      0      0      0      0      0      2      1      0      0      0      0      0      0      0      0      0      0      0 |      l = land.
+      0      0      0      0      0      0      0      0      0      0      0      0      1      0      0      0      0      0      0      0      0      0      0 |      m = ftp_write.
+      1      0      0      0      0      0      0      0      0      0      0      0      0    439      0      0      0      0      0      0      0      0      0 |      n = back.
+      0      0      0      0      0      0      0      0      0      0      0      0      0      0      2      0      0      0      0      0      0      0      0 |      o = imap.
+      7      0      0      0      1      0      1      0      0      0      0      0      0      0      0   3169      0      0      0      0      0      0      0 |      p = satan.
+      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 |      q = phf.
+      2      0      0      0      1      0      0      0      0      0      1      0      0      0      0      0      0    459      0      0      0      0      0 |      r = nmap.
+      0      0      0      0      0      0      0      0      0      0      0      0      1      0      0      0      0      0      0      0      0      0      0 |      s = multihop.
+      2      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      1      1      0      0      0 |      t = warezmaster.
+      9      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0    195      0      0 |      u = warezclient.
+      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0      0 |      v = spy.
+      1      0      0      0      0      0      0      0      0      0      0      0      0      0      0      1      0      0      0      0      0      0      0 |      w = rootkit.
+

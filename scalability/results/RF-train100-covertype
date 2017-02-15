@@ -1,0 +1,85 @@
+
+Options: -I 50 
+
+RandomForest
+
+Bagging with 50 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 93.01 seconds
+Time taken to test model on training data: 10.51 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances      464804               99.9983 %
+Incorrectly Classified Instances         8                0.0017 %
+Kappa statistic                          1     
+Mean absolute error                      0.0088
+Root mean squared error                  0.0344
+Relative absolute error                  4.942  %
+Root relative squared error             11.5384 %
+Total Number of Instances           464812     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     1
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     2
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     3
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     4
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     5
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     6
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     7
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+
+=== Confusion Matrix ===
+
+      a      b      c      d      e      f      g   <-- classified as
+ 169470      2      0      0      0      0      0 |      a = 1
+      1 226640      0      0      0      0      0 |      b = 2
+      0      0  28604      0      0      0      0 |      c = 3
+      0      0      0   2198      0      0      0 |      d = 4
+      1      1      1      0   7592      0      0 |      e = 5
+      0      1      0      0      0  13893      0 |      f = 6
+      1      0      0      0      0      0  16407 |      g = 7
+
+
+=== Error on test data ===
+
+Correctly Classified Instances      112447               96.7702 %
+Incorrectly Classified Instances      3753                3.2298 %
+Kappa statistic                          0.948 
+Mean absolute error                      0.0241
+Root mean squared error                  0.0896
+Relative absolute error                 13.5125 %
+Root relative squared error             30.0167 %
+Total Number of Instances           116200     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,964    0,016    0,972      0,964    0,968      0,950    0,997     0,995     1
+                 0,978    0,030    0,968      0,978    0,973      0,948    0,997     0,996     2
+                 0,968    0,003    0,957      0,968    0,962      0,960    0,999     0,993     3
+                 0,871    0,000    0,916      0,871    0,893      0,892    0,998     0,945     4
+                 0,856    0,001    0,937      0,856    0,895      0,894    0,997     0,964     5
+                 0,918    0,002    0,943      0,918    0,930      0,928    0,998     0,976     6
+                 0,963    0,001    0,977      0,963    0,970      0,969    1,000     0,995     7
+Weighted Avg.    0,968    0,021    0,968      0,968    0,968      0,948    0,997     0,994     
+
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f     g   <-- classified as
+ 40855  1403     0     0    20     4    86 |     a = 1
+  1039 55431    59     0    76    46     9 |     b = 2
+     0    73  6921    31     8   117     0 |     c = 3
+     0     0    55   478     0    16     0 |     d = 4
+    13   233    18     0  1625     9     0 |     e = 5
+     3    84   181    13     5  3187     0 |     f = 6
+   136    15     0     0     1     0  3950 |     g = 7
+
