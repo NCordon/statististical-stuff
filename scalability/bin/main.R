@@ -10,11 +10,11 @@ source(file="./predicting.R")
 ##########################################################################
 covertype <- read.arff("../data/covertype.arff")
 kddcup <- read.arff("../data/kddcup99.arff")
-pokerhand <- read.arff("../data/pokerhand.arff") 
 protein <- read.arff("../data/protein.arff")
+pokerhand <- read.arff("../data/pokerhand.arff") 
 
-datasets <- c(covertype, kddcup, pokerhand, protein)
-datasets.names <- c("covertype", "kddcup", "pokerhand", "protein")
+datasets <- c(covertype, kddcup, protein, pokerhand)
+datasets.names <- c("covertype", "kddcup", "protein", "pokerhand")
 
 
 partitions <- lapply(1:length(datasets), function(i) {
@@ -40,15 +40,23 @@ J48.accuracies <- get.accuracies(J48.class)
 RF.accuracies  <- get.accuracies(RF.class)
 
 
-J48.simple.vote.preds <- prediction.simple.vote( J48.predictions, J48.accuracies )
+J48.simple.vote.preds <- vote.prediction( J48.predictions, J48.accuracies, ponderate = F )
 J48.simple.vote.acc <-  get.accuracies(J48.simple.vote.preds)
 
-RF.simple.vote.preds <- prediction.simple.vote( RF.predictions, RF.accuracies )
+RF.simple.vote.preds <- vote.prediction( RF.predictions, RF.accuracies, ponderate = F )
 RF.simple.vote.acc <-  get.accuracies(RF.simple.vote.preds)
 
+J48.ponderate.vote.preds <- vote.prediction( J48.predictions, J48.accuracies, ponderate = T )
+J48.ponderate.vote.acc <-  get.accuracies(J48.ponderate.vote.preds)
 
-#save(file="temp.RData", list=c('J48.class', 'J48.accuracies',
-#                               'RF.class', 'RF.accuracies',
-#                               'J48.simple.vote.preds', 'J48.simple.vote.acc',
-#                               'RF.simple.vote.preds', 'RF.simple.vote.acc'))
+RF.ponderate.vote.preds <- vote.prediction( RF.predictions, RF.accuracies, ponderate = T )
+RF.ponderate.vote.acc <-  get.accuracies(RF.ponderate.vote.preds)
+
+
+## save(file="temp.RData", list=c('J48.class', 'J48.accuracies',
+##                                'RF.class', 'RF.accuracies',
+##                                'J48.simple.vote.preds', 'J48.simple.vote.acc',
+##                                'RF.simple.vote.preds', 'RF.simple.vote.acc',
+##                                'J48.ponderate.vote.preds', 'J48.ponderate.vote.acc',
+##                                'RF.ponderate.vote.preds', 'RF.ponderate.vote.acc'))
 load(file="temp.RData")
