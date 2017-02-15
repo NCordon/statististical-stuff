@@ -56,3 +56,40 @@ get.accuracies <- function(algorithm.class){
   result
 }
 
+
+prediction.simple.vote <- function(predictions, accuracies){
+  # For each dataset, calc most voted class and break ties with most accurate pred
+  result <- lapply( 1:length( predictions ), function(i){ 
+    dataset.pred <- predictions[[i]]
+    
+    votes <- lapply( dataset.pred, function(m){
+      matrix(
+        sapply( seq_len(nrow(m)), function(row.index){
+          row <- m[row.index,]
+          # Substitute max probability prediction with 1, otherwise 0
+          ifelse( row == max(row), 1, 0)
+        }),
+        ncol = ncol(m), byrow=T)
+    })
+
+    sum.votes <- Reduce('+', votes)
+    categories <- colnames(dataset.pred[[1]])
+
+    sapply( seq_len( nrow(sum.votes) ), function(row.index){
+      row <- sum.votes[row.index,]
+
+      index.max <- which(row == max(row))
+
+      if(length(index.max) == 1){
+        categories [ index.max ]
+       }else{
+         pred.categories <- sapply(votes, function(m){ categories[ which.max(m[row.index, ]) ] })
+         pred.indexes <- which(pred.categories %in% categories[ index.max ])
+         categories[ which.max( accuracies[[i]][ pred.indexes ] ) ]
+      }
+    })
+  })
+
+  names(result) <- datasets.names
+  result
+}
