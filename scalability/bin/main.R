@@ -8,10 +8,13 @@ source(file="./predicting.R")
 ##########################################################################
 # Loads data
 ##########################################################################
+
+# ---- partition.gen ----
 covertype <- read.arff("../data/covertype.arff")
 kddcup <- read.arff("../data/kddcup99.arff")
 protein <- read.arff("../data/protein.arff")
 pokerhand <- read.arff("../data/pokerhand.arff") 
+
 
 datasets <- c(covertype, kddcup, protein, pokerhand)
 datasets.names <- c("covertype", "kddcup", "protein", "pokerhand")
@@ -22,6 +25,7 @@ partitions <- lapply(1:length(datasets), function(i) {
 })
 
 
+# ---- prediction ----
 J48.predictions <- get.predictions(J48, Weka_control())
 # Random Forest with 50 trees
 RF.predictions <- get.predictions(RF, Weka_control(I=50))

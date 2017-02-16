@@ -5,6 +5,7 @@
 #   The result is written into a .RData file
 ##########################################################################
 
+# ---- make.partition ----
 make.partition <- function(data, name){
   train.index <- createDataPartition(data$class, p = 0.8, list = F, times = 1)
   train <- data[ train.index, ]
