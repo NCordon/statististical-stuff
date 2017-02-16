@@ -25,17 +25,19 @@ partitions <- lapply(1:length(datasets), function(i) {
 })
 
 
-# ---- prediction ----
+# ---- prediction.gen ----
 J48.predictions <- get.predictions(J48, Weka_control())
 # Random Forest with 50 trees
 RF.predictions <- get.predictions(RF, Weka_control(I=50))
 
+# ---- save.predictions ----
 #save(file="J48pred.RData", list = c('J48.predictions'))
 #save(file="RFpred.RData", list = c('RF.predictions'))
 load(file="J48pred.RData")
 load(file="RFpred.RData")
 
 
+# ---- accuracy.gen ----
 RF.class  <- get.classes(RF.predictions)
 J48.class <- get.classes(J48.predictions) 
 
@@ -43,7 +45,7 @@ J48.class <- get.classes(J48.predictions)
 J48.accuracies <- get.accuracies(J48.class)
 RF.accuracies  <- get.accuracies(RF.class)
 
-
+# ---- ponderation.gen ----
 J48.simple.vote.preds <- vote.prediction( J48.predictions, J48.accuracies, ponderate = F )
 J48.simple.vote.acc <-  get.accuracies(J48.simple.vote.preds)
 

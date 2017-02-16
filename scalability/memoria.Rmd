@@ -93,3 +93,48 @@ do
 done
 
 ```
+
+Los resultados obtenidos han sido:
+
+```{r echo = FALSE, results = 'asis'}
+resultados.esc <- read.csv(file='./resultados.csv', header=T, sep=",")
+colnames(resultados.esc) <- c("dataset", "algoritmo", "tamaño train(%)", "tiempo entrenamiento", "precisión train", "precisión test")
+knitr::kable(resultados.esc)
+```
+
+# Técnica de estratificación
+
+Se pretende reducir el tiempo de entrenamiento de los clasificadores entrenando el clasificador correspondiente (`J48` o `Random Forest`) sobre cada uno de las cinco particiones de entrenamiento de tamaño 16% (20% del 80% que representaba el total del training) obtenidas en el estudio de la escalabilidad y efecuando una predicción sobre el test.
+
+Para fusionar las predicciones hechas sobre test, se emplea una estrategia de voto:
+
+* **Voto simple**: se toma la clase mayoritaria de entre la predicha por los cinco modelos entrenados.
+* **Voto ponderado**: se obtiene la confianza de la predicción de cada clasificador para todas las clases, se suman las confianzas para cada clase de los cinco clasificadores, y se toma la clase que tenga mayor suma de confianzas.
+
+En caso de empate en ambos modos de voto, se toma como clase la de aquel clasificador que prediciendo alguna de las clases empatadas, más confianza ha obtenido en el total del train.
+
+Esta parte de la práctica se ha hecho enteramente con `R` y `RWeka`, programando:
+
+- Una función para obtener las predicciones sobre las 5 particiones para cada dataset. Nótese que en el caso de `RandomForest` se ha empleado la opción `I=50` para ejecutar el algoritmo con 50 árboles.
+
+```{r include=F}
+# Incluye predicting.R para poder listar el código desde el programa
+knitr::read_chunk('./bin/predicting.R')
+```
+
+```{r get.predictions, eval=F}
+```
+
+```{r prediction.gen, eval=F}
+```
+
+- Funciones de cálculo de las predicciones hechas, a través de las cuales hemos obtenido para cada dataset, y cada *chunk* del 20% del training, la precisión obtenida por el clasificador, tanto `J48`, como `Random Forest`.
+
+
+```{r get.accuracies, eval=F}
+```
+
+```{r accuracy.gen, eval=F}
+```
+
+

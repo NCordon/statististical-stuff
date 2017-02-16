@@ -1,3 +1,4 @@
+# ---- get.predictions ----
 get.predictions <- function(algorithm, param){
   result <- lapply(1:length(datasets.names), function(n.index){
     name <- datasets.names[n.index]
@@ -18,6 +19,7 @@ get.predictions <- function(algorithm, param){
 }
 
 
+# ---- get.accuracies ----
 ### Get class with more confidence for each dataset
 get.classes <- function(predictions){
   lapply(predictions, function(set.pred){
@@ -28,8 +30,6 @@ get.classes <- function(predictions){
     })
   })
 }
-
-
 
 
 acc.rate <- function(true, calculated){
@@ -56,7 +56,7 @@ get.accuracies <- function(algorithm.class){
   result
 }
 
-
+# ---- vote.prediction ----
 vote.prediction <- function(predictions, accuracies, ponderate){
   # For each dataset, calc most voted class and break ties with most accurate pred
   result <- lapply( 1:length( predictions ), function(i){ 
@@ -77,7 +77,8 @@ vote.prediction <- function(predictions, accuracies, ponderate){
     }else{
       votes <- dataset.pred
     }
-    
+
+    # Sum predictions probabilities row by row for each of the five matrixes
     sum.votes <- Reduce('+', votes)
     categories <- colnames(dataset.pred[[1]])
 
