@@ -90,7 +90,9 @@ vote.prediction <- function(predictions, accuracies, ponderate){
       if(length(index.max) == 1){
         categories [ index.max ]
        }else{
-         pred.categories <- sapply(votes, function(m){ categories[ which.max(m[row.index, ]) ] })
+         pred.categories <- sapply(votes, function(m){
+           categories[ which.max(m[row.index, ]) ]
+         })
          pred.indexes <- which(pred.categories %in% categories[ index.max ])
          categories[ which.max( accuracies[[i]][ pred.indexes ] ) ]
       }

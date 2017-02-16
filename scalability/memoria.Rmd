@@ -94,12 +94,40 @@ done
 
 ```
 
+## Resultados
+
 Los resultados obtenidos han sido:
 
 ```{r echo = FALSE, results = 'asis'}
 resultados.esc <- read.csv(file='./resultados.csv', header=T, sep=",")
 colnames(resultados.esc) <- c("dataset", "algoritmo", "tamaño train(%)", "tiempo entrenamiento", "precisión train", "precisión test")
 knitr::kable(resultados.esc)
+```
+
+```{r echo = T}
+library(ggplot2)
+source(file="./bin/multiplot.R")
+
+resultados.esc <- read.csv(file='./resultados.csv', header=T, sep=",")
+datasets.names <- as.character( unique(resultados.esc$dataset) )
+colours <- list(covertype = 'gold', kddcup = 'red', protein = 'blue', pokerhand = 'black')
+
+makeplot <- function(my.aes, colour){
+  do.call(multiplot, 
+    unlist(lapply(c("J48", "RF"), function(algoritmo){
+      lapply(datasets.names, function(name){
+        graph <- ggplot( resultados.esc[ resultados.esc$dataset == name & resultados.esc$algorithm == algoritmo ,], my.aes) +
+                geom_line(colour=colours[[name]]) + theme(legend.position="none") + labs(title = paste(name, algoritmo))
+        graph
+      })
+  }), recursive = F))
+}
+
+makeplot(aes(x=per.train, y=train.acc))
+```
+
+```{r}
+makeplot(aes(x=per.train, y=train.time))
 ```
 
 # Técnica de estratificación
@@ -137,4 +165,21 @@ knitr::read_chunk('./bin/predicting.R')
 ```{r accuracy.gen, eval=F}
 ```
 
+- Función de cálculo de votos simples y ponderados, a partir de la cual obtenemos posteriormente los correspondientes *accuracies*.
 
+```{r vote.prediction, eval=F}
+```
+
+```{r ponderation.gen, eval=F}
+```
+
+## Resultados
+
+Los resultados en cuanto a precisión obtenidos han sido:
+
+```{r echo = FALSE, results = 'asis'}
+load(file="./bin/temp.RData")
+resultados.est <- data.frame(mapply(c, J48.simple.vote.acc, J48.ponderate.vote.acc, RF.simple.vote.acc, RF.ponderate.vote.acc))
+resultados.est[,"algoritmo"] <- c("J48 voto simple", "J48 voto ponderado", "RF voto simple", "RF voto ponderado")
+knitr::kable(resultados.est[,c(5,1:4)])
+```
