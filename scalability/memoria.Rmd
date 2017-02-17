@@ -9,6 +9,12 @@ title: "Escalabilidad en grandes conjuntos de datos"
 output: pdf_document
 ---
 
+
+```{r setup, include=FALSE}
+# Permite redimensionar gráficos
+knitr::opts_chunk$set(dev = 'pdf')
+```
+
 # Características del ordenador
 
 * SO: Linux Ubuntu 15.04, 64 bits con núcleo `4.4.0-040400-generic`
@@ -47,6 +53,7 @@ Se ha programado una función de `R`, disponible en `./bin/partitioning.R` que e
 # Incluye partitioning.R para poder listar el código desde el programa
 knitr::read_chunk('./bin/partitioning.R')
 ```
+
 
 ```{r make.partition, eval=F}
 ```
@@ -104,7 +111,7 @@ colnames(resultados.esc) <- c("dataset", "algoritmo", "tamaño train(%)", "tiemp
 knitr::kable(resultados.esc)
 ```
 
-```{r echo = T}
+```{r echo = F, fig.height=8}
 library(ggplot2)
 source(file="./bin/multiplot.R")
 
@@ -126,7 +133,7 @@ makeplot <- function(my.aes, colour){
 makeplot(aes(x=per.train, y=train.acc))
 ```
 
-```{r}
+```{r echo = F, fig.height=8}
 makeplot(aes(x=per.train, y=train.time))
 ```
 
