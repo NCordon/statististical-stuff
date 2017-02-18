@@ -15,6 +15,8 @@ output: pdf_document
 knitr::opts_chunk$set(dev = 'pdf')
 ```
 
+El código con el que se han efectuado todas las particiones y ejecutado los algoritmos de la segunda parte de la práctica está disponible en `bin/main.R`. El del estudio de escalabilidad, en `bin/scalability.sh`.
+
 # Características del ordenador
 
 * SO: Linux Ubuntu 15.04, 64 bits con núcleo `4.4.0-040400-generic`
@@ -43,15 +45,14 @@ Para el desarrollo de la práctica se han empleado 4 datasets:
 
 # Estudio de escalabilidad
 
-
 Consistía en dividir cada conjunto de datos en 20% de test y otro 80% de training. Se estudia la escalabilidad entrenando clasificadores `J48` y `Random Forest` con 50 árboles, sobre particiones del train del 20%, 40%, 60%, 80% y 100% para evaluar los resultados obtenidos sobre test, y efectuar una comparación en cuanto precisión, ejecución y tamaño del train.
 Se ha usado como semilla aleatoria `12345678`
 
-Se ha programado una función de `R`, disponible en `./bin/partitioning.R` que efectúa la división de un dataset parado como parámetro `data` al 20% test y 80% training, dividiendo a su vez training en 5 particiones disjuntas y estratificadas (test también se ha extraído con muestreo estratificado, conservando la distribución de clases original). Para ello se han empleado las funciones `createDataPartition` y `createFolds` del paquete `caret` de `R`.
+Se ha programado una función de `R`, disponible en `bin/partitioning.R` que efectúa la división de un dataset parado como parámetro `data` al 20% test y 80% training, dividiendo a su vez training en 5 particiones disjuntas y estratificadas (test también se ha extraído con muestreo estratificado, conservando la distribución de clases original). Para ello se han empleado las funciones `createDataPartition` y `createFolds` del paquete `caret` de `R`.
 
 ```{r include=F}
 # Incluye partitioning.R para poder listar el código desde el programa
-knitr::read_chunk('./bin/partitioning.R')
+knitr::read_chunk('../bin/partitioning.R')
 ```
 
 
@@ -61,14 +62,14 @@ knitr::read_chunk('./bin/partitioning.R')
 Se han leído los datasets y se ha aplicado la función anterior.
 
 ```{r include=F}
-knitr::read_chunk('./bin/main.R')
+knitr::read_chunk('../bin/main.R')
 ```
 
 ```{r partition.gen, eval=F}
 ```
 
 
-Una vez obtenidas las particiones, se han fusionado las dos primeras para obtener una con el 40% de train, las tres primeras para obtener otra con el 60% de train y se han escrito cada una de las particiones para cada dataset con la función `write.arff` del paquete `RWeka` en un dataset de nombre `./data/train{porcentaje}-{nombre-dataset}` o `./data/test-{nombre-dataset}` (p.e. `train20-covertype`, `test-covertype`).
+Una vez obtenidas las particiones, se han fusionado las dos primeras para obtener una con el 40% de train, las tres primeras para obtener otra con el 60% de train, y sucesivamente, y se ha volcado cada una de las particiones para cada dataset con la función `write.arff` del paquete `RWeka` en un dataset de nombre `./data/train{porcentaje}-{nombre-dataset}` o `./data/test-{nombre-dataset}` (p.e. `train20-covertype`, `test-covertype`).
 
 A su vez, se han guardado las particiones correspondientes a un dataset en un archivo de la forma `{nombre-dataset}.RData` para liberar toda la memoria RAM posible y disponer de la mayor cantidad posible para la ejecución de algoritmos.
 
@@ -113,15 +114,15 @@ knitr::kable(resultados.esc)
 
 Las siguientes series de gráficas representan porcentaje de train usado respecto al /accuracy/ obtenido tanto en train como en test. La tercera serie de gráficas representa el tiempo que ha tardado en entrenarse el modelo respecto al porcentaje de train usado. A juzgar por las curvas de tiempo en función del tamaño del train usado, todos los algoritmos escalan de manera peor que lineal el tiempo en función del porcentaje de train usado, aunque las curvas que se aprecian son muy suaves, quizás debido a las características de potencia del ordenador usado; esto encaja con el hecho de que J48 es O(n²) en función del número de instancias (n).
 
-Se observa asimismo que no siempre un mayor porcentaje de train implica mayor precisión en test. `pokerhand` parece un dataset muy difícil de aprender; tanto Random Forest como J48 obtienen resultados que no alcanzan el 70% en este dataset, y de hecho Random Forest`está efectuando *overfitting* claramente en dicho dadaset, con *accuracies* que rozan el 100%, y empeorando los resultados de J48 en test.
+Se observa asimismo que no siempre un mayor porcentaje de train implica mayor precisión en test. `pokerhand` parece un dataset muy difícil de aprender; tanto Random Forest como J48 obtienen resultados que no alcanzan el 70% en este dataset, y de hecho Random Forest está efectuando *overfitting* claramente en dicho dadaset, con *accuracies* en train que rozan el 100%, y empeorando los resultados de J48 en test.
 
 El *accuracy* en test parece estabilizarse (las gráficas describen formas logarítmicas) e incluso empeorar (en el caso de `protein` con J48) a medida que aumentamos el conjunto de entrenamiento, lo que contrasta con el hecho de que el tiempo de entrenamiento escala de forma superior a lineal. 
 
-Asimismo se observa en cualquier caso que Ranfom Forest parece ser una técnica más robusta que J48 (recordemos que es un *bagging* y está diseñado para aprender instancias difíciles), obteniendo mejores tasas de precisión en test (exceptuando el caso del *overfitting*), y mejores tiempos de ejecución que J48, a excepción de kddcup, que es el dataset de los analizados con mayor número de instancias, características y categorías.
+Asimismo se observa en cualquier caso que Ranfom Forest parece ser una técnica más robusta que J48 (recordemos que es un *bagging* y está diseñado para aprender instancias difíciles), obteniendo mejores tasas de precisión en test (exceptuando el caso del *overfitting*), y mejores tiempos de ejecución que J48; una excepción a esto último es el caso de `kddcup`, que es el dataset de los analizados con mayor número de instancias, características y categorías.
 
 ```{r echo = F, fig.height=8}
 library(ggplot2)
-source(file="./bin/multiplot.R")
+source(file="../bin/multiplot.R")
 
 resultados.esc <- read.csv(file='./resultados.csv', header=T, sep=",")
 datasets.names <- as.character( unique(resultados.esc$dataset) )
@@ -154,7 +155,7 @@ makeplot(aes(x=per.train, y=train.time))
 \newpage
 # Técnica de estratificación
 
-Se pretende reducir el tiempo de entrenamiento de los clasificadores entrenando el clasificador correspondiente (`J48` o `Random Forest`) sobre cada uno de las cinco particiones de entrenamiento de tamaño 16% (20% del 80% que representaba el total del training) obtenidas en el estudio de la escalabilidad y efecuando una predicción sobre el test.
+Se pretende reducir el tiempo de entrenamiento de los clasificadores entrenando el clasificador correspondiente (J48 o Random Forest) sobre cada uno de las cinco particiones de entrenamiento de tamaño 16% (20% del 80% que representaba el total del training) obtenidas en el estudio de la escalabilidad y efecuando una predicción sobre el test.
 
 Para fusionar las predicciones hechas sobre test, se emplea una estrategia de voto:
 
@@ -169,7 +170,7 @@ Esta parte de la práctica se ha hecho enteramente con `R` y `RWeka`, programand
 
 ```{r include=F}
 # Incluye predicting.R para poder listar el código desde el programa
-knitr::read_chunk('./bin/predicting.R')
+knitr::read_chunk('../bin/predicting.R')
 ```
 
 ```{r get.predictions, eval=F}
@@ -178,7 +179,7 @@ knitr::read_chunk('./bin/predicting.R')
 ```{r prediction.gen, eval=F}
 ```
 
-- Funciones de cálculo de las predicciones hechas, a través de las cuales hemos obtenido para cada dataset, y cada *chunk* del 20% del training, la precisión obtenida por el clasificador, tanto `J48`, como `Random Forest`.
+- Funciones de cálculo de las predicciones hechas, a través de las cuales hemos obtenido para cada dataset, y cada *chunk* del 20% del training, la precisión obtenida por el clasificador, tanto J48, como Random Forest.
 
 
 ```{r get.accuracies, eval=F}
@@ -200,7 +201,7 @@ knitr::read_chunk('./bin/predicting.R')
 Los resultados en cuanto a precisión obtenidos han sido (donde RF/J48 simple representa el mejor resultado obtenido de las 5 ejecuciones con diferente tamaño de train en la evaluación anterior de la escalabillidad):
 
 ```{r echo = F, results = 'asis'}
-load(file="./bin/temp.RData")
+load(file="../bin/temp.RData")
 
 
 best.results <- lapply(c("J48", "RF"), function(algoritmo){
@@ -212,12 +213,13 @@ best.results <- lapply(c("J48", "RF"), function(algoritmo){
       results
 })
 
-resultados.est <- data.frame(mapply(c, J48.simple.vote.acc, 
+resultados.est <-  data.frame(apply(mapply(c, J48.simple.vote.acc, 
                                     J48.ponderate.vote.acc, 
                                     RF.simple.vote.acc, 
                                     RF.ponderate.vote.acc, 
                                     best.results[[1]], 
-                                    best.results[[2]]))
+                                    best.results[[2]]), c(1,2), function(x){x*100}))
+                              
 resultados.est[,"algoritmo"] <- c("J48 voto simple", "J48 voto ponderado", "RF voto simple", "RF voto ponderado", "J48 simple", "RF simple")
 knitr::kable(resultados.est[, c(5,1:4)])
 ```
@@ -230,9 +232,9 @@ names(results) <- c("algoritmo", "dataset", "test.acc")
 ggplot(results, aes(x=dataset, y=test.acc, colour=algoritmo)) + geom_point(size=2)
 ```
 
-Observamos que el modelo de voto ponderado o simple en el caso de `covertype`, que es el dataset más pequeño, no mejora a los mejores resultados obtenidos con Random Forest y J48 durante las ejecuciones de escalabilidad, y el caso de `kddcup` tampoco aporta mucha información el hecho de que el modelo de votos (tanto simple como ponderado) sea ligeramente inferior a los resultados sin votos puesto que sobre dicho dataset los algoritmos simples ya funcionaban muy ien, prodcuiendo tasas de clasificación cercanas al 100%.
+Observamos que el modelo de voto ponderado o simple en el caso de `covertype`, que es el dataset más pequeño, no mejora a los mejores resultados obtenidos con Random Forest y J48 durante las ejecuciones de escalabilidad, y el caso de `kddcup` tampoco aporta mucha información el hecho de que el modelo de votos (tanto simple como ponderado) sea ligeramente inferior a los resultados sin votos puesto que sobre dicho dataset los algoritmos simples ya funcionaban muy bien, produciendo tasas de clasificación cercanas al 100%.
 
-En los casos de los datasets `protein` y `pokerhand` si se aprecia mayor mejoría de los algoritmos con votación respecto a los correspondientes simples, puesto que sobre las gráficas de escalabilidad observabamos que para estos datasets grandes tamaños del conjunto de entrenamiento disminuían la precisión sobre el test.
+En los casos de los datasets `protein` y `pokerhand` sí se aprecia mayor mejoría de los algoritmos con votación respecto a los correspondientes simples, puesto que sobre las gráficas de escalabilidad observabamos que para estos datasets grandes tamaños del conjunto de entrenamiento disminuían la precisión sobre el test.
 
-Podemos conjeturar por tanto que para datasets sobre los que producimos *overfittins* es preferible, además de porque mejora los tiempos de ejecución, porque mejora los *accuracies* obtenidos sobre los conjuntos de prueba, emplear el modelo de votos para entrenar los clasificadores.
+Podemos conjeturar por tanto que para datasets sobre los que producimos *overfitting* es preferible, además de porque mejora los tiempos de ejecución, porque mejora los *accuracies* obtenidos sobre los conjuntos de prueba, emplear el modelo de votos para entrenar los clasificadores.
 
